@@ -1,6 +1,21 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
   background: white;
+  img {
+    border-radius: 10%;
+  }
+}
+
+.navbar-menu {
+  a {
+    color: #F5853F;
+    margin-left: 20px;
+    font-weight: 500;
+    &:hover {
+      text-decoration: none;
+      color: #7C3626;
+    }
+  }
 }
 
 .navbar-lewagon .navbar-collapse {

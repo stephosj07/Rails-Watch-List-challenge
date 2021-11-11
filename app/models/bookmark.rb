@@ -6,7 +6,4 @@ class Bookmark < ApplicationRecord
   validates :list_id, presence: true
   validates :comment, presence: true, length: { minimum: 6 }
   validates :movie_id, uniqueness: { scope: :list_id }
-
 end
-
-# the [movie, list] pairings should be unique.
