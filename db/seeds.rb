@@ -16,7 +16,7 @@ puts "Database is clean"
 
 url = 'http://tmdb.lewagon.com/movie/top_rated'
 
-10.times do |i|
+10.times do
   movies = JSON.parse(URI.open("#{url}?page=1").read)['results']
   movies.each do |movie|
     poster_url = "https://image.tmdb.org/t/p/original"
