@@ -1,0 +1,25 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.simple_form {
+  margin: 40px;
+  padding: 50px;
+  width: 400px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  color: #89A7A7;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  .btn {
+    background-color: #F5853F;
+    border: none;
+  }
+}

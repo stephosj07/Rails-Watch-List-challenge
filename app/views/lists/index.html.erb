@@ -1,10 +1,7 @@
-<ul>
+<ul class="list-cards">
   <% @lists.each do |list| %>
-    <li>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-       <%= list.name %>
-      </div>
+    <li class="card-category">
+      <%= link_to list.name, list_path(list) %>
     </li>
   <% end %>
 </ul>
-</div>
