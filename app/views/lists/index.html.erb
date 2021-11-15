@@ -1,7 +1,10 @@
-<ul class="list-cards">
-  <% @lists.each do |list| %>
-    <li class="card-category">
-      <%= link_to list.name, list_path(list) %>
-    </li>
-  <% end %>
-</ul>
+<div class="home">
+  <h1>Create your own watch lists</h1>
+  <ul class="list-cards">
+    <% @lists.each do |list| %>
+      <li id="list-card">
+        <%= link_to list.name, list_path(list) %>
+      </li>
+    <% end %>
+  </ul>
+</div>
